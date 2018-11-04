@@ -7,6 +7,7 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
@@ -66,12 +67,12 @@ linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
                 switch (data.getName()){
 
                     case  "Taj Mahal" : Log.d("DEBUG", "po" + position);heritageImageView.setImageResource(ImageAdapter.mThumbIds[position]);
-                        linearLayout.setBackgroundResource(R.drawable.tajmahal6);
-                        linearLayout.setAlpha((float) 0.5);
-                        heritageImageView.setAlpha((float) 1);;
+                        //linearLayout.setBackgroundResource(R.drawable.tajmahal6);
+                        //linearLayout.setAlpha((float) 0.5);
+                        //heritageImageView.setAlpha((float) 1);;
                     break;
                     case  "Qutub Minar" : heritageImageView.setImageResource(ImageAdapter.mThumbIds1[position]);
-                        linearLayout.setBackgroundResource(ImageAdapter.mThumbIds1[position]);
+                        //linearLayout.setBackgroundResource(ImageAdapter.mThumbIds1[position]);
                         break;
                     case  "Red Fort" : heritageImageView.setImageResource(ImageAdapter.mThumbIds2[position]);
                         break;

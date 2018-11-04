@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SelectedHeritageMoreInfo"></activity>
+        <activity android:name=".RedirectWebView"></activity>
         <activity android:name=".SelectedHeritage"></activity>
 
         <meta-data

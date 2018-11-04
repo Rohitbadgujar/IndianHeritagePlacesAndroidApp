@@ -52,6 +52,8 @@ public class SelectedHeritageMoreInfo extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(getApplicationContext(), RedirectWebView.class);
+                Log.d( "LOGCAT",  "URL= > "+data.getUrl() );
+                intent.putExtra( "url",data.getUrl() );
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("data", data);
                 intent.putExtras(bundle);

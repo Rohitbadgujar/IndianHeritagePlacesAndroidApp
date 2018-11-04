@@ -26,6 +26,7 @@ public class RedirectWebView extends AppCompatActivity {
         Log.d("DEBUG", "redirected");
         super.onCreate(savedInstanceState);
         Intent i = getIntent();
+        Bundle mBundle  = getIntent().getExtras();
         String url = i.getStringExtra("url");
 
         setContentView(R.layout.activity_web_view);
@@ -33,7 +34,10 @@ public class RedirectWebView extends AppCompatActivity {
         //webSettings.setJavaScriptEnabled(true);
         mWebView = (android.webkit.WebView) findViewById(R.id.web_view);
         mWebView.getSettings().getJavaScriptEnabled();
-        Log.d("DEBUG", data.getUrl());
-        mWebView.loadUrl(url);
+        // Log.d("DEBUG", url);
+        Log.d( "LOGCAT",""+url );
+        if(mBundle != null) {
+            mWebView.loadUrl( mBundle.getString( "url" ) );
+        }
     }
 }
