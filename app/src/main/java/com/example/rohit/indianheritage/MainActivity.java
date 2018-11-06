@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -19,10 +21,11 @@ public class MainActivity extends AppCompatActivity {
     private ListView list = null;
     private ArrayAdapter<String> adapter = null;
     private XMLHeritageListData heritageListData = null;
+   // LinearLayout ly;
     Intent intent = null;
     Bundle b = null;
     int[] listviewImage = new int[]{
-            R.drawable.thumbnail1, R.drawable.thumbnail2,R.drawable.thumbnail3,R.drawable.thumbnail4
+            R.drawable.thumbnail1, R.drawable.thumbnail2,R.drawable.thumbnail3,R.drawable.thumbnail4, R.drawable.thumbnail5
     };
 
 
@@ -31,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview);
         Log.d("DEBUG", " 1 \n");
-
+       // LinearLayout ly = (LinearLayout) findViewById(R.id.android_list_view_tutorial_with_example);
+        //ly.setBackgroundColor(R.drawable.india);
         //list = (ListView) findViewById(R.id.listView);
         heritageListData = new XMLHeritageListData(getApplicationContext());
 

@@ -78,6 +78,8 @@ linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
                         break;
                     case  "The Sun Temple" : heritageImageView.setImageResource(ImageAdapter.mThumbIds3[position]);
                         break;
+                    case  "Ajanta Caves" : heritageImageView.setImageResource(ImageAdapter.mThumbIds4[position]);
+                        break;
                 }
 
                 // do something here (see next section)
@@ -104,7 +106,6 @@ linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
                 bundle.putSerializable("data", data);
                 intent.putExtras(bundle);
                 startActivity(intent);
-                finish();
 
             }
         });
