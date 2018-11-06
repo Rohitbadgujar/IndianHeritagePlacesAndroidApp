@@ -109,24 +109,5 @@ linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
 
             }
         });
-      /* nextButton.setOnClickListener(new View.OnClickListener(){
-                   @Override
-                   public void onClick(View v) {
-                       i = i + 1;
-                       Log.d("DEBUG", "Next button clicked" );
-                       if(i == 1)
-                       heritageImageView.setImageResource(R.drawable.tajmahal1);
-                       if(i == 3)
-                           heritageImageView.setImageResource(R.drawable.tajmahal3);
-                       if(i == 4)
-                           heritageImageView.setImageResource(R.drawable.tajmahal4);
-                   }
-
-       }); */
-
-
-
-
-
     }
 }

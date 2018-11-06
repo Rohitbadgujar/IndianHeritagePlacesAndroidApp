@@ -46,7 +46,21 @@ public class SelectedHeritageMoreInfo extends AppCompatActivity {
         urlTextView.setText(data.getUrl());
         informationTextView.setText(data.getInformation());
         webInfoButton = findViewById(R.id.button2);
+        urlTextView.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                Intent intent = new Intent(getApplicationContext(), RedirectWebView.class);
+                Log.d( "LOGCAT",  "URL= > "+data.getUrl() );
+                intent.putExtra( "url",data.getUrl() );
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("data", data);
+                intent.putExtras(bundle);
+                startActivity(intent);
+                finish();
+
+            }
+        }));
         webInfoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,23 +76,6 @@ public class SelectedHeritageMoreInfo extends AppCompatActivity {
 
             }
         });
-
-        /*webInfoButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d("DEBUG", "webview called");
-                String easyPuzzle  = data.getUrl();
-                Log.d("DEBUG", "webview called 2");
-                Intent i = new Intent (SelectedHeritageMoreInfo.this, RedirectWebView.class);
-                Log.d("DEBUG", "webview called 3");
-                i.putExtra("puzzle", easyPuzzle);
-                Log.d("DEBUG", "webview called 4");
-                startActivity(i);
-                Log.d("DEBUG", "webview called 5");
-
-            }
-        });*/
-
 
     }
 

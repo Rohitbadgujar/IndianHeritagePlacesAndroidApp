@@ -55,11 +55,12 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:linksClickable="true"
                 android:padding="10sp"
                 android:text="Url"
                 android:textColor="@android:color/background_dark"
                 android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textStyle="bold|italic" />
 
             <TextView
                 android:id="@+id/textView4"

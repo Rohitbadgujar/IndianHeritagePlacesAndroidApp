@@ -34,16 +34,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview);
         Log.d("DEBUG", " 1 \n");
-       // LinearLayout ly = (LinearLayout) findViewById(R.id.android_list_view_tutorial_with_example);
-        //ly.setBackgroundColor(R.drawable.india);
-        //list = (ListView) findViewById(R.id.listView);
         heritageListData = new XMLHeritageListData(getApplicationContext());
 
-        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-          //      this,
-            //    android.R.layout.simple_list_item_1,
-              //  heritageListData.getNames());
-        //list.setAdapter(adapter);
         Log.d("DEBUG", heritageListData.getHeritageData(0).getName());
         List<HashMap<String, String>> aList = new ArrayList<HashMap<String, String>>();
 
@@ -78,10 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 b.putSerializable("data", heritageListData.getHeritageData(i));
                 Log.d("DEBUG", " string put in bundle \n");
 
-                // Toast.makeText(getApplicationContext(), ((Person)b.getSerializable("data")).getName(), Toast.LENGTH_LONG).show();
-
                 intent.putExtras(b);
-
 
                 startActivity(intent);
             }
