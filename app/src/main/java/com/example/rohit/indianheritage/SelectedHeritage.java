@@ -67,9 +67,7 @@ linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
                 switch (data.getName()){
 
                     case  "Taj Mahal" : Log.d("DEBUG", "po" + position);heritageImageView.setImageResource(ImageAdapter.mThumbIds[position]);
-                        //linearLayout.setBackgroundResource(R.drawable.tajmahal6);
-                        //linearLayout.setAlpha((float) 0.5);
-                        //heritageImageView.setAlpha((float) 1);;
+                            parent.setSelection(position);
                     break;
                     case  "Qutub Minar" : heritageImageView.setImageResource(ImageAdapter.mThumbIds1[position]);
                         //linearLayout.setBackgroundResource(ImageAdapter.mThumbIds1[position]);

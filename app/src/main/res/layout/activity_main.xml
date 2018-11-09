@@ -10,7 +10,7 @@
         android:id="@+id/android_list_view_tutorial_with_example"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_bright"
+        android:background="#f6ab76"
         android:orientation="horizontal"
         android:padding="7dp">
 
